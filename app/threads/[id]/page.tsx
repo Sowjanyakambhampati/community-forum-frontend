@@ -16,11 +16,7 @@ export async function generateStaticParams() {
     }));
   } catch (error) {
     console.error('Error generating static params:', error);
-    // Return some fallback thread IDs
-    return [
-      { id: '1' },
-      { id: '2' },
-    ];
+    return [];
   }
 }
 
